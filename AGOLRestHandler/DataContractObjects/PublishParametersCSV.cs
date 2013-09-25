@@ -1,0 +1,7 @@
+﻿namespace AGOLRestHandler
+{
+  class PublishParametersCSV
+  {
+
+  }
+}

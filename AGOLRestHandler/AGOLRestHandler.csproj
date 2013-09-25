@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{337EB7C5-F131-4FB5-BB59-9782CCC69087}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AGOLRestHandler</RootNamespace>
+    <AssemblyName>AGOLRestHandler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContractObjects\AddDefinition.cs" />
+    <Compile Include="DataContractObjects\AddFeaturesResponse.cs" />
+    <Compile Include="DataContractObjects\Administration.cs" />
+    <Compile Include="DataContractObjects\AdminLayerInfo.cs" />
+    <Compile Include="DataContractObjects\AnalysisInfo.cs" />
+    <Compile Include="DataContractObjects\Attributes.cs" />
+    <Compile Include="DataContractObjects\Authentication.cs" />
+    <Compile Include="DataContractObjects\ConnectionAttributes.cs" />
+    <Compile Include="DataContractObjects\Context.cs" />
+    <Compile Include="DataContractObjects\CreateFeatureService.cs" />
+    <Compile Include="DataContractObjects\CreateFeatureServiceObjectParameters.cs" />
+    <Compile Include="DataContractObjects\Database.cs" />
+    <Compile Include="DataContractObjects\DataSource.cs" />
+    <Compile Include="DataContractObjects\DefinitionLayer.cs" />
+    <Compile Include="DataContractObjects\DrawingInfo.cs" />
+    <Compile Include="DataContractObjects\EditorTrackingInfo.cs" />
+    <Compile Include="DataContractObjects\Envelope.cs" />
+    <Compile Include="DataContractObjects\Extent.cs" />
+    <Compile Include="DataContractObjects\Feature.cs" />
+    <Compile Include="DataContractObjects\FeatureLayerAttributes.cs" />
+    <Compile Include="DataContractObjects\FeatureQueryResponse.cs" />
+    <Compile Include="DataContractObjects\FeatureService.cs" />
+    <Compile Include="DataContractObjects\FeatureServiceCreationResponse.cs" />
+    <Compile Include="DataContractObjects\FeatureServiceInfo.cs" />
+    <Compile Include="DataContractObjects\FeatureServiceNameAvailability.cs" />
+    <Compile Include="DataContractObjects\FeatureServiceObject.cs" />
+    <Compile Include="DataContractObjects\Field.cs" />
+    <Compile Include="DataContractObjects\FieldString.cs" />
+    <Compile Include="DataContractObjects\GenerateToken.cs" />
+    <Compile Include="DataContractObjects\GeometryField.cs" />
+    <Compile Include="DataContractObjects\GeometryPoint.cs" />
+    <Compile Include="DataContractObjects\GeometryResponse.cs" />
+    <Compile Include="DataContractObjects\Index.cs" />
+    <Compile Include="DataContractObjects\InputLayer.cs" />
+    <Compile Include="DataContractObjects\JobParams.cs" />
+    <Compile Include="DataContractObjects\LabelInfoSymbol.cs" />
+    <Compile Include="DataContractObjects\LabelingInfo.cs" />
+    <Compile Include="DataContractObjects\Layer.cs" />
+    <Compile Include="DataContractObjects\MultiPoint.cs" />
+    <Compile Include="DataContractObjects\Outline.cs" />
+    <Compile Include="DataContractObjects\OutputName.cs" />
+    <Compile Include="DataContractObjects\Path.cs" />
+    <Compile Include="DataContractObjects\Polygon.cs" />
+    <Compile Include="DataContractObjects\Polyline.cs" />
+    <Compile Include="DataContractObjects\Prototype.cs" />
+    <Compile Include="DataContractObjects\PublishParametersCSV.cs" />
+    <Compile Include="DataContractObjects\PublishParametersServiceDefinition.cs" />
+    <Compile Include="DataContractObjects\PublishParametersShapefile.cs" />
+    <Compile Include="DataContractObjects\Renderer.cs" />
+    <Compile Include="DataContractObjects\Resource.cs" />
+    <Compile Include="DataContractObjects\Ring.cs" />
+    <Compile Include="DataContractObjects\Self.cs" />
+    <Compile Include="DataContractObjects\Service.cs" />
+    <Compile Include="DataContractObjects\ServiceCatalog.cs" />
+    <Compile Include="DataContractObjects\SpatialReference.cs" />
+    <Compile Include="DataContractObjects\Success.cs" />
+    <Compile Include="DataContractObjects\Symbol.cs" />
+    <Compile Include="DataContractObjects\Table.cs" />
+    <Compile Include="DataContractObjects\Template.cs" />
+    <Compile Include="DataContractObjects\text.cs" />
+    <Compile Include="DataContractObjects\UniqueValueInfo.cs" />
+    <Compile Include="DataContractObjects\UniqueValueInfos.cs" />
+    <Compile Include="DataContractObjects\Update.cs" />
+    <Compile Include="DataContractObjects\UserOrganizationContent.cs" />
+    <Compile Include="DataContractObjects\XssPreventionInfo.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestAndResponseHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+﻿namespace AGORestCallTestFS
+{
+  class PublishParametersServiceDefinition
+  {
+
+  }
+}
