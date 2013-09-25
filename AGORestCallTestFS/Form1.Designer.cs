@@ -692,7 +692,6 @@
       this.txtPassword.PasswordChar = '*';
       this.txtPassword.Size = new System.Drawing.Size(202, 31);
       this.txtPassword.TabIndex = 50;
-      this.txtPassword.Text = "za64cpf4793";
       this.txtPassword.UseSystemPasswordChar = true;
       // 
       // label13
