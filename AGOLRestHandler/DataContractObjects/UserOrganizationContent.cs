@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace AGOLRestHandler
 {
@@ -12,10 +13,10 @@ namespace AGOLRestHandler
     public Folder currentFolder  {get; set;}
 
     [DataMember]
-    public Item[] items {get; set;}
+    public List<Item> items {get; set;}
 
     [DataMember]
-    public Folder [] folders {get; set;}
+    public List<Folder> folders {get; set;}
   }
 
   [DataContract]

@@ -923,7 +923,6 @@
       // 
       // btnAddDefinitionToLayer
       // 
-      this.btnAddDefinitionToLayer.Enabled = false;
       this.btnAddDefinitionToLayer.Location = new System.Drawing.Point(8, 204);
       this.btnAddDefinitionToLayer.Name = "btnAddDefinitionToLayer";
       this.btnAddDefinitionToLayer.Size = new System.Drawing.Size(226, 39);
@@ -964,7 +963,6 @@
       // 
       // btnCreateFeatureService
       // 
-      this.btnCreateFeatureService.Enabled = false;
       this.btnCreateFeatureService.Location = new System.Drawing.Point(8, 159);
       this.btnCreateFeatureService.Name = "btnCreateFeatureService";
       this.btnCreateFeatureService.Size = new System.Drawing.Size(226, 39);

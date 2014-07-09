@@ -369,7 +369,7 @@ namespace AGORestCallTestFS
             //this is for demo purposes with a point feature service with the spatial ref as below.
             //Users of this code need to build this functionality into their app, either with text input or map click.
             //Supplied XY places a point on the Coronado Bridge, San Diego, California. Will work only for Point feature types.
-            jsonToSend = "adds=[{\"geometry\":{\"x\":-13041634.9497585,\"y\":3853952.46755234,\"spatialReference\":{\"wkid\":102100, \"latestWkid\" = 3857}}," + attributes + "}}]";
+            jsonToSend = "adds=[{\"geometry\":{\"x\":-13041634.9497585,\"y\":3853952.46755234,\"spatialReference\":{\"wkid\":102100, \"latestWkid\":3857}}," + attributes + "}}]";
             break;
           }
         case EditType.delete:
@@ -384,7 +384,8 @@ namespace AGORestCallTestFS
           }
         case EditType.update:
           {
-            jsonToSend = string.Format("updates=[{\"geometry\":{\"x\":-13041634.9497585,\"y\":3856052.46755234,\"spatialReference\":{\"wkid\":102100, \"latestWkid\" = 3857}},{0}", EditRow());
+            string editRow = EditRow();
+            jsonToSend = "updates=[{\"geometry\":{\"x\":-13041634.9497585,\"y\":3856052.46755234,\"spatialReference\":{\"wkid\":102100, \"latestWkid\":3857}},"+ editRow;
 
             break;
           }
@@ -1563,5 +1564,7 @@ namespace AGORestCallTestFS
     }
 
     #endregion
+
+
   }
 }
